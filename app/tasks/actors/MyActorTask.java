@@ -29,7 +29,7 @@ public class MyActorTask {
     private void initialize() {
         actorSystem.scheduler().schedule(
                 Duration.create(0, TimeUnit.SECONDS), // initialDelay
-                Duration.create(3, TimeUnit.SECONDS), // interval
+                Duration.create(30, TimeUnit.SECONDS), // interval
                 someActor,
                 new HelloActorProtocol.SayHello("coolName"), // message,
                 executionContext,
