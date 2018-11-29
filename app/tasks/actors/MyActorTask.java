@@ -18,7 +18,8 @@ public class MyActorTask {
     private final ExecutionContext executionContext;
 
     @Inject
-    public MyActorTask(@Named("hello-actor") ActorRef someActor, ActorSystem actorSystem, ExecutionContext executionContext) {
+    public MyActorTask(@Named("hello-actor") ActorRef someActor, ActorSystem actorSystem,
+                       ExecutionContext executionContext) {
         this.someActor = someActor;
         this.actorSystem = actorSystem;
         this.executionContext = executionContext;

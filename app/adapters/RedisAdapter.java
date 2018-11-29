@@ -6,7 +6,7 @@ import redis.clients.jedis.Jedis;
 
 public class RedisAdapter implements IBaseQueue {
 
-    private String topic = "topic:actorSampleJob";
+    private String topic = "queue:actorSampleJob";
     private final Jedis q;
 
     public RedisAdapter() {

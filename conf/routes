@@ -31,3 +31,4 @@ PUT           /api/user-device/                                                 
 
 #Actors demo
 GET           /api/hello-actor                                                                    controllers.SampleLaunchActorController.sayHello(name:String)
+POST          /api/process-feed                                                                   controllers.SampleLaunchActorController.processFeed()
