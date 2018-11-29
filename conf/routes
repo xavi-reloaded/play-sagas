@@ -1,0 +1,33 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Default path will just redirect to the computer list
+GET           /                                                                                   controllers.HomeController.index()
+
+# Map static resources from the /public folder to the /assets URL path
+GET           /assets/*file                                                                       controllers.Assets.at(path="/public", file)
+
+
+#Assets
+POST          /api/assets                                                                         controllers.AssetController.uploadAsset()
+GET           /api/assets/*file                                                                   controllers.AssetController.getAsset(file: String)
+
+#Authorize
+POST          /api/authorize/login                                                                controllers.AuthorizeController.login()
+GET           /api/authorize/getNewSessionToken/:refreshToken                                     controllers.AuthorizeController.getNewSessionToken(refreshToken: String)
+
+#User
+GET           /api/user/all                                                                       controllers.UserController.findAll(page ?= null, pagesize ?= null, fields ?= null, search ?= null, sort ?= null)
+GET           /api/user/:id                                                                       controllers.UserController.lookup(id: Long)
+POST          /api/user/                                                                          controllers.UserController.insert()
+PUT           /api/user/                                                                          controllers.UserController.update()
+DELETE        /api/user/:id                                                                       controllers.UserController.delete(id: Long)
+
+#UserDevice
+POST          /api/user-device/                                                                   controllers.UserDeviceController.insert()
+PUT           /api/user-device/                                                                   controllers.UserDeviceController.update()
+
+
+#Actors demo
+GET           /api/hello-actor                                                                    controllers.SampleLaunchActorController.sayHello(name:String)
