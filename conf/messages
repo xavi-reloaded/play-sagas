@@ -1,20 +1,4 @@
-# Errors
-error.PHONE_NOT_REGISTERED = El telèfon de l'usuari no està registat
-error.CODE_NOT_VALID = El codi introduït no és vàlid
-
-# General messages
-smsCode = El teu codi de verificació de Tramit és {0}
-
-# FlyerOfCensus
-FlyerOfCensus.title=Volant d''empadronament
-
-# TaxesDirectDebit
-TaxesDirectDebit.title=Domiciliació d''impostos
-
-#MinorConstructionLicence
-MinorConstructionLicence.title=Sol·licitud d''obres menors
-
 ###################Notifications
 ##ProcessRequestUpdate
 notifications.processRequestUpdate.title=Nova actualització
-notifications.processRequestUpdate.message=S''ha actualitzat el seu tràmit de {0}, realitzat el dia {1}
+notifications.processRequestUpdate.message=S''ha actualitzat el seu feed de {0}, realitzat el dia {1}
