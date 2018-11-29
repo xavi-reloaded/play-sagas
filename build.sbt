@@ -1,4 +1,4 @@
-name := "feed-processor"
+name := "FeedService-processor"
 
 version := "1.0.0-SNAPSHOT"
 

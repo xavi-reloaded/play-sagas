@@ -12,6 +12,6 @@ import play.Logger;
 public class OnStartUpClass {
     @Inject
     public OnStartUpClass(Config config) {
-        Logger.info("feed-processor has started in mode: " + config.getString("app.environment"));
+        Logger.info("FeedService-processor has started in mode: " + config.getString("app.environment"));
     }
 }
